@@ -49,12 +49,14 @@ body {
   display: flex;
   justify-content: space-around;
   width: 80%;
+  height: 50%;
   margin: 0 auto;
+  align-items: center;
 }
 
 .timer {
-  height: 220px;
-  width: 200px;
+  height: 70%;
+  width: 20%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -69,6 +71,7 @@ body {
   opacity: 0.4;
   border-radius: 3px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 1);
+  position: relative;
 }
 
 .box .curr {
@@ -77,7 +80,10 @@ body {
   opacity: 1;
   font-weight: 600;
   text-align: center;
-  padding-top: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .timer p {
@@ -130,4 +136,105 @@ footer::before {
   background-color: brown;
   display: block;
   margin: 0 auto 10px auto;
+}
+
+@media only screen and (max-width: 1750px) {
+  .countdown {
+    width: 85%;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 1271px) {
+  .heading h1 {
+    font-size: 200%;
+  }
+  .heading p {
+    font-size: 70%;
+  }
+  .countdown {
+    height: 50%;
+  }
+  .box .curr {
+    font-size: 250%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .heading h1 {
+    font-size: 155%;
+  }
+  .heading p {
+    font-size: 65%;
+  }
+  .countdown {
+    width: 90%;
+    height: 45%;
+  }
+  .box .curr {
+    font-size: 220%;
+  }
+  .timer p {
+    font-size: 90%;
+  }
+  .quote p {
+    font-size: 60%;
+    line-height: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .countdown {
+    height: 40%;
+  }
+  .box .curr {
+    font-size: 180%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .container {
+    width: 80%;
+  }
+  .countdown {
+    width: 100%;
+    height: 35%;
+  }
+  .box .curr {
+    font-size: 180%;
+  }
+  .timer p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .countdown {
+    width: 100%;
+    height: 35%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+  .countdown {
+    height: 30%;
+  }
+  .box .curr {
+    font-size: 140%;
+  }
+  .timer p {
+    font-size: 65%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .countdown {
+    height: 25%;
+  }
+  .box .curr {
+    font-size: 130%;
+  }
 }
