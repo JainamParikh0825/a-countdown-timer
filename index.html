@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown-Timer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>New Year Countdown</h1>
+        <p id="present-day"></p>
+      </div>
+      <div class="countdown">
+        <div class="timer days">
+          <div class="box" id="first">
+            <p class="curr" id="curr-day">20</p>
+          </div>
+          <p>Days</p>
+        </div>
+        <div class="timer hours">
+          <div class="box">
+            <p class="curr" id="curr-hour">10</p>
+          </div>
+          <p>Hours</p>
+        </div>
+        <div class="timer minutes">
+          <div class="box">
+            <p class="curr" id="curr-minute">30</p>
+          </div>
+          <p>Minutes</p>
+        </div>
+        <div class="timer seconds">
+          <div class="box" id="last">
+            <p class="curr" id="curr-second">40</p>
+          </div>
+          <p>Seconds</p>
+        </div>
+      </div>
+      <div class="quote">
+        <p>
+          Every great dream begins with a dreamer. Always remember, you have
+          within you the strength, the patience, and the passion to reach for
+          the stars to change the world.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p id="copyright"></p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
